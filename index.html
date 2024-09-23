@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas Dinámicas con Vanilla JS</title>
+    <link rel="stylesheet" href="/style/main.css">
 </head>
+
 <body>
-  Holas
+    <main id="content">
+        <div class="letter-paper letter-paper-menu">
+            <h1 class="letter-paper-tittle"> Envía tu carta a tu Crush </h1>
+            <p>
+                Crea una carta de amor especial para tu crush.
+            </p>
+            <p>
+                Haz clic en el botón de abajo y genera en segundos un mensaje lleno de sentimientos.
+            </p>
+            <div class="letter-paper-button-top">
+                <button class="letter-paper-button letter-button" id="generate-letter"
+                    onclick="generateLetter()">
+                    <img src="/src/icons/letter-icon.svg" alt="icon-envelope">Generar carta</button>
+            </div>
+            <div class="letter-paper-link disable">
+                <input type="text" name="link" id="letter-link" placeholder="Enter your link here">
+                <div class="letter-buttons">
+                    <button class="letter-button" id="copy-link" onclick="copy()">
+                        <img src="/src/icons/copy-icon.svg" alt="icon-copy">
+                    </button>
+                    <button class="letter-button" id="share-link" onclick="navigate()">
+                        <img src="/src/icons/launch-icon.svg" alt="icon-launch"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
+
 </html>
